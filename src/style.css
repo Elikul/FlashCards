@@ -1,0 +1,102 @@
+* {
+    margin: 0 auto;
+}
+
+.container{
+    background: linear-gradient(#B3E5D3, #76D0AF);
+    color: #1A659E;
+    font-family: 'DynaPuff', cursive;
+
+    min-height: 100vh;
+    padding: 20px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cards-container{
+    align-content: space-around;
+    max-width: 1000px;
+    margin: 0 20%;
+    flex: 1 1 auto;
+    position: relative;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.card-item{
+    align-items: flex-end;
+    background-color: #F7C59F;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    color: #004E89;
+    font-size: 22pt;
+    text-align: center;
+    height: 250px;
+    width: 250px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.card-item {
+    transition: 2s ease;
+    transform-style: preserve-3d;
+}
+
+.card-item:hover {
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    backface-visibility: hidden;
+    position: absolute;
+}
+
+.front{
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    z-index: 1;
+}
+
+#porcini{
+    background-image: url("../assets/porcini.png");
+}
+
+#morel{
+    background-image: url("../assets/morel.png");
+}
+
+#oyster{
+    background-image: url("../assets/oyster.png");
+}
+
+#russule{
+    background-image: url("../assets/russle.png");
+}
+
+#truffle{
+    background-image: url("../assets/truffle.png");
+}
+
+#honey-agaric{
+    background-image: url("../assets/honey_agarik.png");
+}
+
+#champignon{
+    background-image: url("../assets/champingnon.png");
+}
+
+#chanterelle{
+    background-image: url("../assets/chanterelle.png");
+}
+
+#portobello{
+    background-image: url("../assets/portobello.png");
+}
